@@ -1,0 +1,11 @@
+openssl genrsa -des3 -out shouCA.key 2048
+
+openssl req -x509 -new -nodes -key shouCA.key -sha256 -days 1024 -out shouCA.pem
+
+openssl req -new -sha256 -nodes -out shou.csr -newkey rsa:2048 -keyout shou.key -config <( cat source/server.csr.cnf )
+
+openssl x509 -req -in shou.csr -CA shouCA.pem -CAkey shouCA.key -CAcreateserial -out shou.crt -days 365 -sha256 -extfile source/v3.ext
+
+//for FF
+
+openssl pkcs12 -export -in shou.crt -inkey shouCA.key -out shou.p12

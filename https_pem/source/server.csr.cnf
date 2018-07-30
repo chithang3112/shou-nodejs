@@ -1,0 +1,14 @@
+[req]
+default_bits = 2048
+prompt = no
+default_md = sha256
+distinguished_name = dn
+
+[dn]
+C=JP
+ST=T
+L=T
+O=T
+OU=T
+emailAddress=absol3112@gmail.com
+CN = shou.nodejs
