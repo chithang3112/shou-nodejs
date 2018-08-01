@@ -85,8 +85,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3039106">
-              <caret line="16" column="58" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
+            <state vertical-scroll-proportion="0.05698324">
+              <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -387,7 +387,13 @@
       <option name="project" value="LOCAL" />
       <updated>1533086292831</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="test server">
+      <created>1533086443149</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1533086443149</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -451,7 +457,8 @@
     <MESSAGE value="add server" />
     <MESSAGE value="change method server" />
     <MESSAGE value="change port" />
-    <option name="LAST_COMMIT_MESSAGE" value="change port" />
+    <MESSAGE value="test server" />
+    <option name="LAST_COMMIT_MESSAGE" value="test server" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -852,8 +859,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3039106">
-          <caret line="16" column="58" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.05698324">
+          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
           <folding />
         </state>
       </provider>

@@ -7,7 +7,7 @@ let express = require('express');
 let https = require('https');
 let http = require('http');
 let ejs = require('ejs');
-let PORT = process.env.PORT || 443;
+let PORT = process.env.PORT || 80;
 
 express()
     .use(express.static(path.join(__dirname, 'public')))
