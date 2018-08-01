@@ -16,7 +16,8 @@ var certOptions = {
 var app = express();
 //var httpsServer = https.createServer(certOptions, app);
 var httpServer = http.createServer(app);
-var io = require('socket.io')(httpsServer);
+//var io = require('socket.io')(httpsServer);
+var io = require('socket.io')(httpServer);
 
 //db設定
 // mysql://b6e7028f57ed52:68c0eb28@us-cdbr-iron-east-01.cleardb.net/heroku_a832250927dee8b?reconnect=true
