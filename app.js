@@ -7,7 +7,7 @@ let express = require('express');
 let https = require('https');
 let http = require('http');
 let ejs = require('ejs');
-const PORT = process.env.PORT || 443
+const PORT = process.env.PORT || 443;
 
 var certOptions = {
     key: fs.readFileSync('https_pem/shou.key'),
