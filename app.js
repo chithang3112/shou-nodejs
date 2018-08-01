@@ -7,6 +7,7 @@ let express = require('express');
 let https = require('https');
 let http = require('http');
 let ejs = require('ejs');
+const PORT = process.env.PORT || 443;
 
 var certOptions = {
     key: fs.readFileSync('https_pem/shou.key'),
@@ -14,7 +15,6 @@ var certOptions = {
 };
 var app = express();
 var httpsServer = https.createServer(certOptions, app);
-var httpServer = http.createServer(app);
 var io = require('socket.io')(httpsServer);
 
 //db設定
@@ -110,6 +110,5 @@ io.sockets.on('connection', function(socket) {
     });
 });
 
-//httpsServer.listen(443, () => console.log('Running!!!'));
-httpServer.listen(80, () => console.log('Running!!!'));
+httpsServer.listen(PORT, () => console.log('Running!!!'));
 
