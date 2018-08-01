@@ -2,8 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24250dee-a617-4ba1-a35f-a8ee6cf55a89" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/nodejs.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.vagrant/machines/nodeJs/virtualbox/action_provision" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.vagrant/machines/nodeJs/virtualbox/action_set_name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.vagrant/machines/nodeJs/virtualbox/creator_uid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.vagrant/machines/nodeJs/virtualbox/id" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.vagrant/machines/nodeJs/virtualbox/index_uuid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.vagrant/machines/nodeJs/virtualbox/private_key" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.vagrant/machines/nodeJs/virtualbox/synced_folders" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.vagrant/machines/nodeJs/virtualbox/vagrant_cwd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.vagrant/machines/shouNodeJs/virtualbox/action_provision" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.vagrant/machines/shouNodeJs/virtualbox/action_set_name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.vagrant/machines/shouNodeJs/virtualbox/creator_uid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.vagrant/machines/shouNodeJs/virtualbox/id" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.vagrant/machines/shouNodeJs/virtualbox/index_uuid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.vagrant/machines/shouNodeJs/virtualbox/private_key" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.vagrant/machines/shouNodeJs/virtualbox/synced_folders" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.vagrant/machines/shouNodeJs/virtualbox/vagrant_cwd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.vagrant/machines/shouYiiBasic/virtualbox/vagrant_cwd" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
     </list>
     <ignored path="nodejs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -18,23 +45,6 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
-  </component>
-  <component name="DatabaseView">
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_TABLE_DETAILS" value="true" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="MySQL - nodejs@shou.nodejs" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -85,8 +95,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.51227677">
-              <caret line="27" column="58" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
+            <state vertical-scroll-proportion="0.24665178">
+              <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -156,70 +166,13 @@
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-        <option value="JavaScript File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="develop" />
-      </map>
-    </option>
-  </component>
-  <component name="GithubProjectSettings">
-    <option name="CREATE_PULL_REQUEST_DEFAULT_BRANCH" value="develop" />
-    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_USER" value="chithang3112" />
-    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_NAME" value="shou-nodejs" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/myapp/app.js" />
-        <option value="$PROJECT_DIR$/index.js" />
-        <option value="$PROJECT_DIR$/index.ejs" />
-        <option value="$PROJECT_DIR$/header.html" />
-        <option value="$PROJECT_DIR$/provision.sh" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/template.ejs" />
-        <option value="$PROJECT_DIR$/views/body/test.ejs" />
-        <option value="$PROJECT_DIR$/views/chat_css.ejs" />
-        <option value="$PROJECT_DIR$/socket/server.js" />
-        <option value="$PROJECT_DIR$/server.js" />
-        <option value="$PROJECT_DIR$/socket/chat.html" />
-        <option value="$PROJECT_DIR$/views/chat.ejs" />
-        <option value="$PROJECT_DIR$/views/rtc/js/main.js" />
-        <option value="$PROJECT_DIR$/views/rtc/index.ejs" />
-        <option value="$PROJECT_DIR$/source/js/main.js" />
-        <option value="$PROJECT_DIR$/views/template.ejs" />
-        <option value="$PROJECT_DIR$/views/head.ejs" />
-        <option value="$PROJECT_DIR$/source/css/main.css" />
-        <option value="$PROJECT_DIR$/source/js/train.js" />
-        <option value="$PROJECT_DIR$/views/room.ejs" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0eef3700-3109-4080-be76-348e4e7d2f83/console.sql" />
-        <option value="$PROJECT_DIR$/views/login.ejs" />
-        <option value="$PROJECT_DIR$/views/index.ejs" />
-        <option value="$PROJECT_DIR$/source/js/innerRoom.js" />
-        <option value="$PROJECT_DIR$/Vagrantfile" />
-        <option value="dbtable:/a71c6c14/0eef3700-3109-4080-be76-348e4e7d2f83/nodejs.room" />
-        <option value="dbtable:/a71c6c14/0eef3700-3109-4080-be76-348e4e7d2f83/nodejs.user" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/app.js" />
-      </list>
-    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" />
   <component name="JsBuildToolPackageJson" detection-done="true" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
-  </component>
-  <component name="PhpServers">
-    <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
@@ -254,7 +207,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -275,150 +227,27 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\proseeds\workspace\nodejs\source" />
-      <recent name="C:\proseeds\workspace\nodejs\views\rtc" />
-      <recent name="C:\proseeds\workspace\nodejs" />
-      <recent name="C:\proseeds\workspace\nodejs\views" />
-    </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="INTERPRETER_PATH" value="C:\Program Files\Git\usr\bin\bash.exe" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
-    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
-      <BehatRunner />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run-script" />
-      <scripts />
-      <envs />
-      <method />
-    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="24250dee-a617-4ba1-a35f-a8ee6cf55a89" name="Default" comment="" />
-      <created>1529632439627</created>
+      <created>1533100458851</created>
       <option name="number" value="Default" />
-      <updated>1529632439627</updated>
+      <updated>1533100458851</updated>
     </task>
-    <task id="LOCAL-00001" summary="Merge branch 'master' of https://github.com/chithang3112/shou-nodejs into develop&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;">
-      <created>1533083949619</created>
-      <option name="number" value="00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1533083949619</updated>
-    </task>
-    <task id="LOCAL-00002" summary="add library">
-      <created>1533084235885</created>
-      <option name="number" value="00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1533084235885</updated>
-    </task>
-    <task id="LOCAL-00003" summary="add library">
-      <created>1533084628593</created>
-      <option name="number" value="00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1533084628593</updated>
-    </task>
-    <task id="LOCAL-00004" summary="change method server">
-      <created>1533085837568</created>
-      <option name="number" value="00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1533085837568</updated>
-    </task>
-    <task id="LOCAL-00005" summary="change port">
-      <created>1533086009903</created>
-      <option name="number" value="00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1533086009903</updated>
-    </task>
-    <task id="LOCAL-00006" summary="change port">
-      <created>1533086022900</created>
-      <option name="number" value="00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1533086022900</updated>
-    </task>
-    <task id="LOCAL-00007" summary="change port">
-      <created>1533086292831</created>
-      <option name="number" value="00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1533086292831</updated>
-    </task>
-    <task id="LOCAL-00008" summary="test server">
-      <created>1533086443149</created>
-      <option name="number" value="00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1533086443149</updated>
-    </task>
-    <task id="LOCAL-00009" summary="test server">
-      <created>1533086499824</created>
-      <option name="number" value="00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1533086499824</updated>
-    </task>
-    <task id="LOCAL-00010" summary="test server">
-      <created>1533086655281</created>
-      <option name="number" value="00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1533086655281</updated>
-    </task>
-    <task id="LOCAL-00011" summary="test server">
-      <created>1533087370643</created>
-      <option name="number" value="00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1533087370643</updated>
-    </task>
-    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14818764" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15138593" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -458,25 +287,8 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
-  <component name="Vcs.Log.UiProperties">
-    <option name="RECENTLY_FILTERED_USER_GROUPS">
-      <collection />
-    </option>
-    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-      <collection />
-    </option>
-  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Merge branch 'master' of https://github.com/chithang3112/shou-nodejs into develop&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;" />
-    <MESSAGE value="add library" />
-    <MESSAGE value="add server" />
-    <MESSAGE value="change method server" />
-    <MESSAGE value="change port" />
-    <MESSAGE value="test server" />
-    <option name="LAST_COMMIT_MESSAGE" value="test server" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -877,8 +689,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51227677">
-          <caret line="27" column="58" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.24665178">
+          <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
           <folding />
         </state>
       </provider>
