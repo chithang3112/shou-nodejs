@@ -78,7 +78,7 @@ io.sockets.on('connection', function(socket) {
     socket.on('Add room',(room)=>{
         log('room-' + room);
         var date =Date.now() / 1000;
-        var sql = "INSERT INTO room (room_name, created_at) VALUES ('" + room + "', "+ date +")";
+        var sql = "INSERT INTO room (room_name, created_at,room_master_id) VALUES ('" + room + "', "+ date +",1)";
         connection.query(sql, function (err, result) {
             if (err) throw err;
             log("Created room");
