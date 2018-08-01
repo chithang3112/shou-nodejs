@@ -7,14 +7,15 @@ let express = require('express');
 let https = require('https');
 let http = require('http');
 let ejs = require('ejs');
-let PORT = process.env.PORT || 443;
+let PORT = process.env.PORT || 80;
 
 var certOptions = {
     key: fs.readFileSync('https_pem/shou.key'),
     cert: fs.readFileSync('https_pem/shou.crt'),
 };
 var app = express();
-var httpsServer = https.createServer(certOptions, app);
+//var httpsServer = https.createServer(certOptions, app);
+var httpServer = http.createServer(app);
 var io = require('socket.io')(httpsServer);
 
 //db設定
@@ -111,5 +112,6 @@ io.sockets.on('connection', function(socket) {
     });
 });
 
-httpsServer.listen(PORT, () => console.log('Running!!! Listenning on ' + PORT));
+//httpsServer.listen(PORT, () => console.log('Running!!! Listenning on ' + PORT));
+httpServer.listen(PORT, () => console.log('Running!!! Listenning on ' + PORT));
 
