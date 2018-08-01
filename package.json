@@ -10,6 +10,9 @@
   "author": "absol",
   "license": "ISC",
   "dependencies": {
-    "socket.io": "^2.1.1"
+    "socket.io": "^2.1.1",
+    "express":"*",
+    "body-parser":"*",
+    "ejs":"*"
   }
 }
