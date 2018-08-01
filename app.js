@@ -28,7 +28,7 @@ var connection = mysql.createConnection({
 });
 
 connection.connect(function(err) {
-    //if (err) throw 'exception' + err;
+    if (err) throw 'exception' + err;
     console.log('Connection Successful');
 });
 
