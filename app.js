@@ -7,27 +7,31 @@ let express = require('express');
 let https = require('https');
 let http = require('http');
 let ejs = require('ejs');
+let PORT = process.env.PORT || 80;
 
 var certOptions = {
     key: fs.readFileSync('https_pem/shou.key'),
     cert: fs.readFileSync('https_pem/shou.crt'),
 };
 var app = express();
-var httpsServer = https.createServer(certOptions, app);
-var io = require('socket.io')(httpsServer);
+//var httpsServer = https.createServer(certOptions, app);
+var httpServer = http.createServer(app);
+//var io = require('socket.io')(httpsServer);
+var io = require('socket.io')(httpServer);
 
 //db設定
+// mysql://b6e7028f57ed52:68c0eb28@us-cdbr-iron-east-01.cleardb.net/heroku_a832250927dee8b?reconnect=true
 var mysql = require('mysql');
 var connection = mysql.createConnection({
-    host     : 'shou.nodejs',
-    database : 'nodejs',
+    host     : process.env.PORT ? 'us-cdbr-iron-east-01.cleardb.net' : 'shou.nodejs',
+    database : process.env.PORT ? 'heroku_a832250927dee8b' : 'nodejs',
     port     : '3306',
-    user     : 'user',
-    password : 'password',
+    user     : process.env.PORT ? 'b6e7028f57ed52' : 'user',
+    password : process.env.PORT ? '68c0eb28' : 'password',
 });
 
 connection.connect(function(err) {
-    if (err) throw err;
+    if (err) throw 'exception' + err;
     console.log('Connection Successful');
 });
 
@@ -109,5 +113,6 @@ io.sockets.on('connection', function(socket) {
     });
 });
 
-httpsServer.listen(443, () => console.log('Running!!!'));
+//httpsServer.listen(PORT, () => console.log('Running!!! Listenning on ' + PORT));
+httpServer.listen(PORT, () => console.log('Running!!! Listenning on ' + PORT));
 

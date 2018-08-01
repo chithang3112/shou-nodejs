@@ -1,1 +1,0 @@
-{"virtualbox":{"/var/www/nodejs":{"mount_options":["dmode=777","fmode=777","uid=0","gid=0"],"guestpath":"/var/www/nodejs","hostpath":"C:/proseeds/workspace/nodejs","disabled":false,"__vagrantfile":true}}}
