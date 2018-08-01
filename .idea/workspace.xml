@@ -85,8 +85,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.1463687">
-              <caret line="113" column="55" selection-start-line="113" selection-start-column="55" selection-end-line="113" selection-end-column="55" />
+            <state vertical-scroll-proportion="0.3039106">
+              <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -363,7 +363,13 @@
       <option name="project" value="LOCAL" />
       <updated>1533084628593</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="change method server">
+      <created>1533085837568</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1533085837568</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -424,7 +430,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Merge branch 'master' of https://github.com/chithang3112/shou-nodejs into develop&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;" />
     <MESSAGE value="add library" />
-    <option name="LAST_COMMIT_MESSAGE" value="add library" />
+    <MESSAGE value="add server" />
+    <MESSAGE value="change method server" />
+    <option name="LAST_COMMIT_MESSAGE" value="change method server" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -825,8 +833,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.1463687">
-          <caret line="113" column="55" selection-start-line="113" selection-start-column="55" selection-end-line="113" selection-end-column="55" />
+        <state vertical-scroll-proportion="0.3039106">
+          <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
           <folding />
         </state>
       </provider>
