@@ -18,13 +18,14 @@ var httpsServer = https.createServer(certOptions, app);
 var io = require('socket.io')(httpsServer);
 
 //db設定
+//b6e7028f57ed52:68c0eb28@us-cdbr-iron-east-01.cleardb.net/heroku_a832250927dee8b?
 var mysql = require('mysql');
 var connection = mysql.createConnection({
-    host     : 'shou.nodejs',
-    database : 'nodejs',
+    host     : process.env.PORT ? 'us-cdbr-iron-east-01.cleardb.net' : 'shou.nodejs',
+    database : process.env.PORT ? 'heroku_a832250927dee8b' : 'nodejs',
     port     : '3306',
-    user     : 'user',
-    password : 'password',
+    user     : process.env.PORT ? '6e7028f57ed52' : 'user',
+    password : process.env.PORT ? '68c0eb28' : 'password',
 });
 
 connection.connect(function(err) {
