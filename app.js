@@ -20,14 +20,13 @@ var httpServer = http.createServer(app);
 var io = require('socket.io')(httpServer);
 
 //db設定
-// mysql://b6e7028f57ed52:68c0eb28@us-cdbr-iron-east-01.cleardb.net/heroku_a832250927dee8b?reconnect=true
 var mysql = require('mysql');
 var connection = mysql.createConnection({
-    host     : process.env.PORT ? 'us-cdbr-iron-east-01.cleardb.net' : 'shou.nodejs',
-    database : process.env.PORT ? 'heroku_a832250927dee8b' : 'nodejs',
+    host     : process.env.PORT ? 'sql12.freemysqlhosting.net' : 'shou.nodejs',
+    database : process.env.PORT ? 'sql12250198' : 'nodejs',
     port     : '3306',
-    user     : process.env.PORT ? 'b6e7028f57ed52' : 'user',
-    password : process.env.PORT ? '68c0eb28' : 'password',
+    user     : process.env.PORT ? 'sql12250198' : 'user',
+    password : process.env.PORT ? 'KuYnM1sh5B' : 'password',
 });
 
 connection.connect(function(err) {
