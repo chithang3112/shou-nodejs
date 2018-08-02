@@ -20,6 +20,7 @@ var httpServer = http.createServer(app);
 var io = require('socket.io')(httpServer);
 
 //db設定
+//test comment
 var mysql = require('mysql');
 var connection = mysql.createConnection({
     host     : process.env.PORT ? 'sql12.freemysqlhosting.net' : 'shou.nodejs',
