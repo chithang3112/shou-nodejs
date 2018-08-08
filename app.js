@@ -41,14 +41,18 @@ app.use(express.static(path.join(__dirname, 'source')));
 //トップページ
 
 app.get('/',function(req, res){
-    res.redirect('/index');
+    res.redirect('/login');
 });
 app.get('/index' , function (req, res) {
-    res.render('template',{title : 'タイトル1',body : req.url});
+    res.render('template', {title: 'タイトル1', head: 'head', body: req.url});
+});
+
+app.get('/login' , function (req, res) {
+    res.render('template', {title: 'ログイン', head: 'login', body: req.url});
 });
 
 app.get('/room' , function (req, res) {
-    res.render('template',{title : 'ルーム' + req.query.roomId ,body : req.baseUrl + req.path});
+    res.render('template', {title: 'ルーム' + req.query.roomId, head: 'head', body: req.baseUrl + req.path});
 });
 
 io.sockets.on('connection', function(socket) {
@@ -102,8 +106,19 @@ io.sockets.on('connection', function(socket) {
             });
         });
     });
-});
 
+    socket.on('validate login',(data)=>{
+        connection.query('SELECT * FROM user WHERE login_id ="' + data.username + '" AND password ="' + data.password + '"', function (err, rows) {
+            if (err) throw err;
+            if (rows.length > 1) throw 'duplicate user';
+            if (rows == ''){
+                socket.emit('error validate');
+            }else{
+                socket.emit('redirect', 'index');
+            }
+        });
+    });
+});
 //httpsServer.listen(PORT, () => console.log('Running!!! Listenning on ' + PORT));
 httpServer.listen(PORT, () => console.log('Running!!! Listenning on ' + PORT));
 
