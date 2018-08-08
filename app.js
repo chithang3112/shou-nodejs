@@ -58,20 +58,17 @@ io.sockets.on('connection', function(socket) {
         array.push.apply(array, arguments);
         socket.emit('log', array);
     }
-    socket.on('get list room',getListRoom=()=>{
-        connection.query('SELECT * FROM room', function (err, rows) {
-            if (err) throw err;
-            log('Server said: ', 'Data received from Db:');
-            log(rows);
-            socket.emit('show room', rows);
-        });
-    });
     log('Connected');
-    socket.on('message', function(message) {
-        log('Client said: ', message);
-        // for a real app, would be room-only (not broadcast)
-        socket.emit('message', message);
+    socket.emit('load room');
+
+    socket.on('get list room',()=>{
+        connection.query('SELECT * FROM room', function (err, rows) {
+        if (err) throw err;
+        log('Server said: ', 'Data received from Db:');
+        log(rows);
+        io.emit('show room', rows);
     });
+});
 
     socket.on('join room',(room)=>{
         log('room-' + room);
@@ -86,13 +83,7 @@ io.sockets.on('connection', function(socket) {
         connection.query(sql, function (err, result) {
             if (err) throw err;
             log("Created room");
-            let sql = "SELECT * FROM room where id = LAST_INSERT_ID()";
-            connection.query( sql ,function(err,rows){
-                if(err) throw err;
-                log('Server said: ', 'Data received from Db:');
-                log(rows);
-                socket.emit('show room', rows);
-            });
+            socket.emit('load room');
         });
     });
 
