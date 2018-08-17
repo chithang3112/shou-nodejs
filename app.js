@@ -7,6 +7,7 @@ let express = require('express');
 let https = require('https');
 let http = require('http');
 let ejs = require('ejs');
+var cookieParser = require("cookie-parser");
 let PORT = process.env.PORT || 80;
 
 var certOptions = {
@@ -23,11 +24,11 @@ var io = require('socket.io')(httpServer);
 //test comment
 var mysql = require('mysql');
 var connection = mysql.createConnection({
-    host     : process.env.PORT ? 'sql12.freemysqlhosting.net' : 'shou.nodejs',
-    database : process.env.PORT ? 'sql12250198' : 'nodejs',
+    host     : process.env.PORT ? 'db4free.net' : 'shou.nodejs',
+    database : process.env.PORT ? 'thangtran_db' : 'nodejs',
     port     : '3306',
-    user     : process.env.PORT ? 'sql12250198' : 'user',
-    password : process.env.PORT ? 'KuYnM1sh5B' : 'password',
+    user     : process.env.PORT ? 'thangtran' : 'user',
+    password : process.env.PORT ? '123456' : 'password',
 });
 
 connection.connect(function(err) {
@@ -37,6 +38,7 @@ connection.connect(function(err) {
 
 //appの設定
 app.set('view engine', 'ejs');
+app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'source')));
 //トップページ
 
@@ -44,7 +46,12 @@ app.get('/',function(req, res){
     res.redirect('/login');
 });
 app.get('/index' , function (req, res) {
-    res.render('template', {title: 'タイトル1', head: 'head', body: req.url});
+    console.log(req.cookies.SNJ_SSID);
+    if(req.cookies.SNJ_SSID){
+        res.render('template', {title: 'タイトル1', head: 'head', body: req.url});
+    }else{
+        res.redirect('/login');
+    }
 });
 
 app.get('/login' , function (req, res) {
@@ -94,7 +101,6 @@ io.sockets.on('connection', function(socket) {
     socket.on('loading room',(roomId)=>{
         log(roomId);
         var room = 'room-' + roomId;
-        socket.nickname = 'Earl';
         socket.join(room);
         io.to(room).emit('connectToRoom', room);
         io.in(room).clients((err, clients) => {
@@ -114,7 +120,11 @@ io.sockets.on('connection', function(socket) {
             if (rows == ''){
                 socket.emit('error validate');
             }else{
-                socket.emit('redirect', 'index');
+                var data = {
+                    url : 'index',
+                    data : rows
+                }
+                socket.emit('redirect', data);
             }
         });
     });
