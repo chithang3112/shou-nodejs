@@ -17,7 +17,7 @@ $('#login').on('click',()=>{
         };
         socket.emit('validate login',data);
     }else{
-        alert('please fill username and password');
+        alert('Please fill username and password');
     }
 });
 
@@ -25,6 +25,14 @@ socket.on('error validate', (error) => {
   alert('username or password is not match');
 });
 
-socket.on('redirect',(destination)=>{
-    window.location.href = destination;
+socket.on('redirect',(data)=>{
+    var nickname;
+    if(data.data[0].nickname){
+        nickname = data.data[0].nickname;
+    }else{
+        nickname = data.data[0].login_id;
+    }
+    var cookie = window.btoa('shougenshi-' + data.data[0].id + '-'+ nickname +'-31121994');
+    document.cookie = "SNJ_SSID=" + cookie;
+    window.location.href = data.url;
 });
