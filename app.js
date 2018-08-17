@@ -28,7 +28,7 @@ var connection = mysql.createConnection({
     database : process.env.PORT ? 'thangtran_db' : 'nodejs',
     port     : '3306',
     user     : process.env.PORT ? 'thangtran' : 'user',
-    password : process.env.PORT ? '123456' : 'password',
+    password : process.env.PORT ? '12345678' : 'password',
 });
 
 connection.connect(function(err) {
