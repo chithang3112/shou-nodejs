@@ -25,7 +25,7 @@ var userTableSql = 'CREATE TABLE IF NOT EXISTS user (id INT(11) NOT NULL auto_in
 connection.query(userTableSql, function (err, result) {
     if (err) throw err;
     console.log("Created table user");
-    var initUserImport = "INSERT INTO user (login_id, password, nick_name, valid_chk, created_at) VALUES ('system', 'password', 'システム管理者', 1 ,UNIX_TIMESTAMP(NOW()))";
+    var initUserImport = "INSERT INTO user (login_id, password, nick_name, valid_chk, created_at) VALUES ('system', 'password', 'システム管理者', 1 ,UNIX_TIMESTAMP(NOW())),('admin', 'password', '管理者', 1 ,UNIX_TIMESTAMP(NOW()))";
     connection.query(initUserImport, function (err, result) {
         if (err) throw err;
         console.log("Created user room");
