@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node sqlImport.js & node app.js"
+    "start": "node dropTable.js & node sqlImport.js & node app.js"
   },
   "author": "absol",
   "license": "ISC",
