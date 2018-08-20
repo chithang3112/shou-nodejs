@@ -15,8 +15,8 @@ connection.connect(function(err) {
     console.log('Connection Successful');
 });
 
-var roomTableSql = 'DROP TABLE user IF EXISTS user';
-connection.query(roomTableSql, function (err, result) {
+var deleteTableUserSql = 'DROP TABLE IF EXISTS user';
+connection.query(deleteTableUserSql, function (err, result) {
     if (err) throw err;
     console.log("Deleted table user");
 });
